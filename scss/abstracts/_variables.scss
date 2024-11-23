@@ -1,0 +1,150 @@
+// variables.scss
+
+// Warna Utama (Primary Colors)
+$color-primary: #E30220; // Merah cerah
+$color-secondary: #BF0000; // Merah tua
+$color-dark: #242024; // Hitam pekat
+$color-light: #DDDDDD; // Abu muda
+$color-background: #F3F4F5; // Abu terang (untuk background)
+
+// Gray-color-variables
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+// Warna Aksen (Accent Colors)
+$color-accent-1: #FFD700; // Gold
+$color-accent-2: #FFA500; // Orange light
+$color-accent-3: #1A73E8; // Biru cerah
+$color-accent-4: #005BB5; // Biru tua
+$color-accent-5: #27AE60; // Hijau segar
+$color-accent-6: #145A32; // Hijau gelap
+
+// color variables
+$blue:    #0d6efd;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #d63384;
+$red:     #dc3545;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #198754;
+$teal:    #20c997;
+$cyan:    #0dcaf0;
+
+// Warna Netral (Neutral Colors)
+$color-neutral-dark: #2C2C2C; // Abu gelap
+$color-neutral-medium: #8C8C8C; // Abu sedang
+
+/*
+Dokumentasi Warna SCSS
+
+Warna Utama (Primary Colors)  
+
+|   Variabel Warna         |   Kode Warna   |   Deskripsi                                                                   |
+|--------------------------|----------------|-------------------------------------------------------------------------------|
+|  $color-primary          |  #E30220       | Merah cerah, digunakan untuk elemen utama seperti tombol aksi dan teks utama.  |
+|  $color-secondary        |  #BF0000       | Merah tua, untuk subjudul, border penting, atau elemen pendukung utama.       |
+|  $color-dark             |  #242024       | Hitam pekat, cocok untuk background gelap, footer, atau teks pada elemen terang.|
+|  $color-light            |  #DDDDDD       | Abu muda, digunakan untuk background terang, card container, atau garis pemisah.|
+|  $color-background       |  #F3F4F5       | Abu terang, untuk background utama halaman atau kontainer besar.              |
+
+Gray-Color Variables  
+
+|   Variabel Warna         |   Kode Warna   |   Deskripsi                                                                   |
+|--------------------------|----------------|-------------------------------------------------------------------------------|
+|  $white                  |  #FFFFFF       | Putih, untuk teks pada background gelap atau elemen utama.                    |
+|  $gray-100               |  #F8F9FA       | Abu terang, cocok untuk background elemen ringan atau card.                   |
+|  $gray-200               |  #E9ECEF       | Abu muda, bisa digunakan untuk border ringan atau background input fields.    |
+|  $gray-300               |  #DEE2E6       | Abu lebih gelap, cocok untuk border atau shadow ringan.                       |
+|  $gray-400               |  #CED4DA       | Abu netral, cocok untuk teks sekunder atau elemen border.                     |
+|  $gray-500               |  #ADB5BD       | Abu netral gelap, digunakan untuk teks pada elemen terang atau sebagai garis border. |
+|  $gray-600               |  #6C757D       | Abu sedang, digunakan untuk teks atau border netral.                          |
+|  $gray-700               |  #495057       | Abu gelap, digunakan untuk teks utama di atas background terang atau elemen footer. |
+|  $gray-800               |  #343A40       | Abu tua, digunakan untuk background footer atau shadow.                       |
+|  $gray-900               |  #212529       | Abu sangat gelap, digunakan untuk teks utama atau background yang membutuhkan kontras tinggi. |
+|  $black                  |  #000000       | Hitam pekat, digunakan untuk background gelap atau teks pada elemen terang.   |
+
+Warna Aksen (Accent Colors)  
+
+|   Variabel Warna         |   Kode Warna   |   Deskripsi                                                                   |
+|--------------------------|----------------|-------------------------------------------------------------------------------|
+|  $color-accent-1         |  #FFD700       | Emas, digunakan untuk highlight teks atau ikon kecil yang menarik perhatian.  |
+|  $color-accent-2         |  #FFA500       | Oranye terang, digunakan untuk efek hover atau badge.                         |
+|  $color-accent-3         |  #1A73E8       | Biru cerah, cocok untuk tautan (link) atau elemen interaktif lainnya.         |
+|  $color-accent-4         |  #005BB5       | Biru tua, digunakan untuk teks kecil pada background terang atau elemen modal header. |
+|  $color-accent-5         |  #27AE60       | Hijau segar, digunakan untuk notifikasi sukses atau tombol sekunder.         |
+|  $color-accent-6         |  #145A32       | Hijau gelap, cocok untuk background kartu atau elemen yang elegan.            |
+
+Warna Warna Lain (Additional Colors)  
+
+|   Variabel Warna         |   Kode Warna   |   Deskripsi                                                                   |
+|--------------------------|----------------|-------------------------------------------------------------------------------|
+|  $blue                   |  #0D6EFD       | Biru, digunakan untuk tombol atau link aktif, elemen interaktif utama.        |
+|  $indigo                 |  #6610F2       | Ungu biru, digunakan untuk aksen pada elemen interaktif.                      |
+|  $purple                 |  #6F42C1       | Ungu, untuk elemen dengan aksen elegan seperti tombol hover atau badge.       |
+|  $pink                   |  #D63384       | Merah muda, digunakan untuk elemen penting seperti notifikasi error.          |
+|  $red                    |  #DC3545       | Merah, untuk pesan error atau elemen yang menunjukkan kesalahan.              |
+|  $orange                 |  #FD7E14       | Oranye, cocok untuk tombol peringatan atau highlight peringatan.              |
+|  $yellow                 |  #FFC107       | Kuning, digunakan untuk teks atau elemen yang membutuhkan perhatian seperti promo atau alert.|
+|  $green                  |  #198754       | Hijau, untuk menampilkan status sukses atau tombol aksi berhasil.            |
+|  $teal                   |  #20C997       | Biru kehijauan, digunakan untuk elemen yang menyegarkan atau notifikasi sukses. |
+|  $cyan                   |  #0DCAF0       | Biru muda, untuk tautan atau tombol aktif dengan aksen cerah.                 |
+
+Contoh Implementasi di SCSS  
+1.   Tombol Utama (Primary Button)  
+scss
+.button-primary {
+  background-color: $color-primary;
+  color: $white;
+  border: 2px solid $color-dark;
+  &:hover {
+    background-color: $color-accent-2;
+    color: $color-dark;
+  }
+}
+ 
+
+2.   Card dengan Background Ringan  
+scss
+.card {
+  background-color: $gray-100;
+  border: 1px solid $gray-300;
+  box-shadow: 0 4px 6px $gray-500;
+}
+ 
+
+3.   Link dengan Aksen Biru  
+scss
+.link {
+  color: $blue;
+  &:hover {
+    color: $indigo;
+  }
+}
+ 
+
+4.   Teks Notifikasi Sukses  
+scss
+.notification-success {
+  background-color: $green;
+  color: $white;
+}
+ 
+
+---
+
+Penjelasan Penggunaan:  
+1.   Warna Utama & Sekunder  : Digunakan untuk elemen-elemen besar seperti tombol utama, header, dan teks utama. 
+2.   Accent Colors  : Warna-warna aksen digunakan untuk elemen interaktif seperti tombol hover, tautan, dan ikon kecil yang ingin menarik perhatian.
+3.   Gray-scale  : Warna abu-abu digunakan untuk elemen netral, background, dan teks yang lebih lembut.
+4.   Warna Lain  : Seperti biru, hijau, merah, dan lainnya, digunakan untuk notifikasi, status, atau elemen peringatan.
+*/

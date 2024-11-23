@@ -1,0 +1,31 @@
+// grid.scss
+
+// Container
+.mp-container {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "mp-aside mp-header"
+        "mp-aside mp-main"
+        "mp-aside mp-footer";
+        // Area: Header
+        header {
+            grid-area: mp-header;
+        }
+
+        // Area: Aside
+        aside {
+            grid-area: mp-aside;
+        }
+        
+        // Area: Main
+        main {
+            grid-area: mp-main;
+        }
+
+        // Area: Footer
+        footer {
+            grid-area: mp-footer;
+        }
+}
